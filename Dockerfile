@@ -20,4 +20,8 @@ RUN apt update && \
 
 COPY review.py /review.py
 
+# Include the entirety of the post_comments directory for simplicity's sake
+# Technically we only need the clang_tidy_review directory but this keeps things consistent for running the command locally during development and in the docker image
+COPY post_comments /post_comments
+
 ENTRYPOINT ["/review.py"]
