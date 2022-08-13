@@ -58,7 +58,7 @@ inputs:
     required: false
     default: true
   pr:
-    default: ${{ github.event.number }}
+    default: ${{ github.event.pull_request.number }}
   repo:
     default: ${{ github.repository }}
 outputs:
