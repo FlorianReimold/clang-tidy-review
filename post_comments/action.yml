@@ -1,6 +1,6 @@
 name: 'clang-tidy review - post comments'
 author: 'Peter Hill'
-description: 'Create a pull request review based on warnings produced by the root clang-tidy review action'
+description: 'Create a pull request review based on warnings produced by the parent action'
 branding:
   icon: 'book-open'
   color: 'red'
